@@ -192,7 +192,35 @@ main{
     font-weight: 600;
     color: #727272;
 }
-
+/* Sponsers Style Start */
+.sponser-titles{
+    margin-top: 40px;
+    text-align: center;
+}
+.sponser-titles h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.sponsore-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin:100px;
+}
+.sponsore-container img{
+    height: 40px;
+    width: 100px;
+}
+footer{
+    background-color: rgb(237, 211, 215);
+    padding: 30px;
+}
+.footer{
+    text-align: center;
+    font-weight: 800;
+    color: #131313;
+    font-size: 1.4rem;
+}
 
 
 
@@ -234,6 +262,11 @@ main{
         margin: 0 auto;
         margin: 20px 30px;
     }
+    .sponsore-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
 }
 
 /* Responsive for medium screen */
@@ -272,6 +305,11 @@ main{
         gap: 40px;
         margin: 0 auto;
         margin: 50px 90px;
+    }
+    .sponsore-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 100px;
     }
 
 }
