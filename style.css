@@ -159,6 +159,40 @@ main{
     font-weight: 800;
     margin-top: 5px;
 }
+/* Facts Style Start */
+.facts-title{
+    margin-left: 180px;
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.facts-des{
+    margin-left: 180px;
+    margin-top: 10px;
+}
+.facts-cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.fact-card{
+    border: solid .5px #FF900E;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 25px;
+}
+.card-num{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(79, 73, 73);
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #727272;
+}
+
 
 
 
@@ -171,7 +205,8 @@ main{
 /* Responsive for small screen */
 @media screen and (max-width:576px) {
     .nav-container,
-    .teams-container
+    .teams-container,
+    .features-container
     {
         flex-direction: column;
     }
@@ -184,13 +219,29 @@ main{
         width: 100%;
         margin-left: 0;
     }
-    
+    .features-text-descript{
+        margin: 0;
+        padding: 20px;
+    }
+    .experience10{
+        position: relative;
+        margin-left: 30%;
+    }
+    .facts-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin: 0 auto;
+        margin: 20px 30px;
+    }
 }
 
 /* Responsive for medium screen */
 @media screen and (min-width:576px) and (max-width:960px) {
     .nav-container,
-    .teams-container{
+    .teams-container,
+    .features-container
+    {
         flex-direction: column;
     }
     .banner-container>p,
@@ -202,4 +253,25 @@ main{
         width: 90%;
         margin-left: 40px;
     }
+    .features-text-descript,.facts-des{
+        margin: 0;
+        padding: 20px;
+    }
+    .features-text-descript h1,p,
+    .teams-title-container{
+        text-align: center;
+        border: none;
+    }
+    .experience10{
+        position: relative;
+        margin-left: 30%;
+    }
+    .facts-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        margin: 0 auto;
+        margin: 50px 90px;
+    }
+
 }
